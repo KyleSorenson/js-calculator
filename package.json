@@ -1,0 +1,14 @@
+{
+  "name": "js-calculator",
+  "version": "1.0.0",
+  "description": "Javascript calculator | Free Code Camp Project",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass scss/js-calculator.scss css/style.css -w"
+  },
+  "author": "Kyle Sorenson",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^6.0.1"
+  }
+}

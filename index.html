@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Javascript Calculator</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+      <div class="calculator">
+        <div class="calculator__display" id="display">0</div>
+        <button class="calculator__button calculator__button--zero" id="zero" value="0" onclick="handleClick('0')">0</button>
+        <button class="calculator__button calculator__button--one" id="one" value="1" onclick="handleClick('1')">1</button>
+        <button class="calculator__button calculator__button--two" id="two" value="2" onclick="handleClick('2')">2</button>
+        <button class="calculator__button calculator__button--three" id="three" value="3" onclick="handleClick('3')">3</button>
+        <button class="calculator__button calculator__button--four" id="four" value="4" onclick="handleClick('4')">4</button>
+        <button class="calculator__button calculator__button--five" id="five" value="5" onclick="handleClick('5')">5</button>
+        <button class="calculator__button calculator__button--six" id="six" value="6" onclick="handleClick('6')">6</button>
+        <button class="calculator__button calculator__button--seven" id="seven" value="7" onclick="handleClick('7')">7</button>
+        <button class="calculator__button calculator__button--eight" id="eight" value="8" onclick="handleClick('8')">8</button>
+        <button class="calculator__button calculator__button--nine" id="nine" value="9" onclick="handleClick('9')">9</button>
+        <button class="calculator__button calculator__button--decimal" id="decimal" value="." onclick="handleClick('.')">.</button>
+        <button class="calculator__button calculator__button--operation calculator__button--add" id="add" value="+" onclick="handleClick('+')">+</button>
+        <button class="calculator__button calculator__button--operation calculator__button--subtract" id="subtract" value="-" onclick="handleClick('-')">-</button>
+        <button class="calculator__button calculator__button--operation calculator__button--multiply" id="multiply" value="x" onclick="handleClick('x')">x</button>
+        <button class="calculator__button calculator__button--operation calculator__button--divide" id="divide" value="÷" onclick="handleClick('÷')">÷</button>
+        <button class="calculator__button calculator__button--operation calculator__button--equals" id="equals" value="=" onclick="expressionEval()">=</button>
+        <button class="calculator__button calculator__button--clear" id="clear" onclick="allClear()">A/C</button>
+      </div>
+    <script src="js/js-calculator.js" async defer></script>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>
